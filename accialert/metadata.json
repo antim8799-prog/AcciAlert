@@ -1,6 +1,0 @@
-{
-  "name": "AcciAlert",
-  "description": "Public emergency-response web application to quickly report road accidents and connect with nearby help.",
-  "requestFramePermissions": ["geolocation"],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
