@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* Shared dark theme for the utility classes used throughout the app. */
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+:root.dark body {
+  background: #111315;
+}
+
+:root.dark [class~="bg-white"] {
+  background-color: #1b1f22 !important;
+}
+
+:root.dark [class~="bg-neutral-50"] {
+  background-color: #15181a !important;
+}
+
+:root.dark [class~="bg-neutral-100"] {
+  background-color: #24292d !important;
+}
+
+:root.dark [class~="bg-neutral-900"] {
+  background-color: #090a0b !important;
+}
+
+:root.dark [class~="text-neutral-950"],
+:root.dark [class~="text-neutral-900"],
+:root.dark [class~="text-neutral-800"] {
+  color: #f1f5f9 !important;
+}
+
+:root.dark [class~="text-neutral-700"],
+:root.dark [class~="text-neutral-600"] {
+  color: #c4ccd3 !important;
+}
+
+:root.dark [class~="text-neutral-500"] {
+  color: #9aa5ae !important;
+}
+
+:root.dark [class~="border-neutral-200"],
+:root.dark [class~="border-neutral-100"] {
+  border-color: #343b41 !important;
+}
+
+:root.dark input,
+:root.dark textarea,
+:root.dark select {
+  background-color: #1b1f22;
+  color: #f1f5f9;
+  border-color: #465059;
+}
+
+:root.dark input::placeholder,
+:root.dark textarea::placeholder {
+  color: #8b96a0;
+}
+
+:root.dark .leaflet-popup-content-wrapper,
+:root.dark .leaflet-popup-tip {
+  background: #1b1f22 !important;
+  color: #f1f5f9 !important;
+  border-color: #343b41 !important;
+}
+
+/* Leaflet Custom Styling */
+.leaflet-container {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+  z-index: 10 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  padding: 0 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #e5e5e5 !important;
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #ffffff !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Custom Marker reset */
+.accialert-user-marker,
+.accialert-incident-marker-critical,
+.accialert-incident-marker-moderate,
+.accialert-incident-marker-low {
+  background: transparent !important;
+  border: none !important;
+}
